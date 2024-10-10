@@ -23,7 +23,7 @@ def get_ig_likes(post_url):
 
 # METHOD: get reactions from a facebook photo
 def get_fb_reactions(photo_id):
-    access_token = os.getenv('FB_TOKEN')
+    access_token = os.getenv('FB_TOKEN'         )
     url = f"https://graph.facebook.com/v18.0/{photo_id}?fields=likes.summary(true)&access_token={access_token}"
     
     try:
